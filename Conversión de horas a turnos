@@ -1,0 +1,15 @@
+# Ejercicio 19: Conversión de horas a turnos
+# Pide la hora (0-23) y determina si es "Mañana" (6-11), "Tarde" (12-17), "Noche" (18-23) o "Madrugada" (0-5).
+
+hora = int(input("Introduce la hora (0-23): "))
+
+if hora >= 6 and hora <= 11:
+    print("Es la mañana.")
+elif hora >= 12 and hora <= 17:
+    print("Es la tarde.")
+elif hora >= 18 and hora <= 23:
+    print("Es la noche.")
+elif hora >= 0 and hora <= 5:
+    print("Es la madrugada.")
+else:
+    print("Hora fuera de rango. Debe ser entre 0 y 23.")

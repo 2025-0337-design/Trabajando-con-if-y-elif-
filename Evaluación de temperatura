@@ -1,0 +1,14 @@
+# Ejercicio 18: Evaluación de temperatura
+# Solicita la temperatura en grados Celsius e imprime un mensaje dependiendo del valor:
+# < 0°C: “Hace mucho frío” | 0–20°C: “Clima fresco” | 21–30°C: “Clima agradable” | > 30°C: “Hace mucho calor”
+
+temp = float(input("Introduce la temperatura en °C: "))
+
+if temp < 0:
+    print("Hace mucho frío.")
+elif temp <= 20:
+    print("Clima fresco.")
+elif temp <= 30:
+    print("Clima agradable.")
+else:
+    print("Hace mucho calor.")

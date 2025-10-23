@@ -1,0 +1,13 @@
+# Ejercicio 17: Tipo de triángulo
+# Pide tres longitudes y determina si el triángulo es equilátero, isósceles o escaleno.
+
+a = float(input("Introduce la primera longitud: "))
+b = float(input("Introduce la segunda longitud: "))
+c = float(input("Introduce la tercera longitud: "))
+
+if a == b == c:
+    print("El triángulo es equilátero (todos los lados iguales).")
+elif a == b or a == c or b == c:
+    print("El triángulo es isósceles (dos lados iguales).")
+else:
+    print("El triángulo es escaleno (todos los lados diferentes).")

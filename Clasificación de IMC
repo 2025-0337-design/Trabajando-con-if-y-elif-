@@ -1,0 +1,19 @@
+# Ejercicio 20: Clasificación de IMC
+# Solicita el peso (kg) y la altura (m), calcula el IMC = peso / altura²
+# y clasifica el resultado según los rangos estándar.
+
+peso = float(input("Introduce tu peso en kg: "))
+altura = float(input("Introduce tu altura en metros: "))
+
+imc = peso / (altura ** 2)
+
+print(f"Tu IMC es: {imc:.2f}")
+
+if imc < 18.5:
+    print("Bajo peso.")
+elif imc < 25:
+    print("Normal.")
+elif imc < 30:
+    print("Sobrepeso.")
+else:
+    print("Obesidad.")

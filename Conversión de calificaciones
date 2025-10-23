@@ -1,0 +1,18 @@
+# Ejercicio 14: Conversión de calificaciones
+# Solicita la calificación numérica de un estudiante (0-100) y conviértela en una letra:
+# 90-100: A | 80-89: B | 70-79: C | 60-69: D | 0-59: F
+
+calificacion = float(input("Introduce tu calificación (0-100): "))
+
+if calificacion >= 90 and calificacion <= 100:
+    print("Tu calificación es: A")
+elif calificacion >= 80:
+    print("Tu calificación es: B")
+elif calificacion >= 70:
+    print("Tu calificación es: C")
+elif calificacion >= 60:
+    print("Tu calificación es: D")
+elif calificacion >= 0:
+    print("Tu calificación es: F")
+else:
+    print("Error: calificación fuera del rango válido (0-100).")
