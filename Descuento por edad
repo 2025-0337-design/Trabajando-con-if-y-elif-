@@ -1,0 +1,10 @@
+# Ejercicio 5: Descuento por edad
+# Un cine ofrece un descuento del 50% a personas mayores de 60 años.
+# Solicita la edad del usuario y determina si aplica para el descuento.
+
+edad = int(input("Introduce tu edad: "))
+
+if edad > 60:
+    print("Aplicas para el descuento del 50%.")
+else:
+    print("No aplicas para el descuento.")

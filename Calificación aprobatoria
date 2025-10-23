@@ -1,0 +1,9 @@
+# Ejercicio 6: Calificación aprobatoria
+# Solicita la calificación de un estudiante (0-100) y determina si aprobó (mínimo 60) o reprobó.
+
+calificacion = float(input("Introduce tu calificación (0-100): "))
+
+if calificacion >= 60:
+    print("Aprobaste la materia.")
+else:
+    print("Reprobaste la materia.")
