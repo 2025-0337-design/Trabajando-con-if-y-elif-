@@ -1,0 +1,6 @@
+# Ejercicio 5: Cuenta regresiva desde un número hasta 0
+numero = int(input("Ingresa un número entero: "))
+
+while numero >= 0:
+    print(numero)
+    numero -= 1

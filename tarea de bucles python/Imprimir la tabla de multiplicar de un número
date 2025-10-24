@@ -1,0 +1,5 @@
+# Ejercicio 6: Tabla de multiplicar de un número dado
+numero = int(input("Ingresa un número: "))
+
+for i in range(1, 13):
+    print(numero, "x", i, "=", numero * i)

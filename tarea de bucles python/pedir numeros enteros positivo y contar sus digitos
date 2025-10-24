@@ -1,0 +1,16 @@
+#ejercicio 3 Contar cuántos dígitos tiene un número
+
+# Pedimos un número entero positivo
+numero = int(input("Ingresa un número entero positivo: "))
+
+contador = 0  
+
+# Si el número es 0, tiene 1 dígito
+if numero == 0:
+    contador = 1
+else:
+    while numero > 0:
+        numero //= 10  # Eliminamos el último dígito
+        contador += 1  # Sumamos 1 al contador
+
+print("El número tiene", contador, "dígitos.")

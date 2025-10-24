@@ -1,0 +1,10 @@
+# Ejercicio 10: Solicitar contraseña hasta que sea correcta
+contraseña_correcta = "python123"
+
+while True:
+    contraseña = input("Ingresa la contraseña: ")
+    if contraseña == contraseña_correcta:
+        print("Contraseña correcta. Acceso permitido.")
+        break
+    else:
+        print("Contraseña incorrecta, intenta de nuevo.")

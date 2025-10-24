@@ -1,0 +1,8 @@
+# Ejercicio 8: Serie de Fibonacci hasta n términos
+n = int(input("¿Cuántos términos de Fibonacci quieres ver?: "))
+
+a, b = 0, 1
+
+for i in range(n):
+    print(a)
+    a, b = b, a + b

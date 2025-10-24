@@ -1,0 +1,9 @@
+# Ejercicio 7: Números impares hasta un número dado
+numero = int(input("Ingresa un número entero positivo: "))
+
+contador = 1
+
+while contador <= numero:
+    if contador % 2 != 0:
+        print(contador)
+    contador += 1

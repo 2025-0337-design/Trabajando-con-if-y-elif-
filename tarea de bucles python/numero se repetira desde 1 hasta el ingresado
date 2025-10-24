@@ -1,0 +1,11 @@
+#ejercicio 1 Mostrar los números del 1 hasta el número ingresado
+
+# Pedimos al usuario un número entero positivo
+numero = int(input("Ingresa un número entero positivo: "))
+
+contador = 1  
+
+# Mientras el contador sea menor o igual al número ingresado, seguimos mostrando
+while contador <= numero:
+    print(contador)
+    contador += 1  # Aumentamos el contador en 1 cada vez
