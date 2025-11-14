@@ -3,33 +3,18 @@
 
 import math
 
-entrada = input("Introduce números separados por comas (ej: 1,2,3,4): ")
+entrada = input("Introduce números separados por comas: ")
 
-partes = entrada.split(",")
-numeros = []
+numeros = [float(n) for n in entrada.split(",")]
 
-for p in partes:
-    p = p.strip()
-    if p != "":
-        numeros.append(float(p))
+media = sum(numeros) / len(numeros)
 
-if len(numeros) == 0:
-    print("No se introdujeron números válidos.")
-else:
-    
-    suma = 0
-    for x in numeros:
-        suma = suma + x
-    media = suma / len(numeros)
+suma_cuadrados = 0
+for n in numeros:
+    suma_cuadrados += (n - media) ** 2
 
-    # calcular varianza (poblacional): media de (x - media)^2
-    suma_cuadrados = 0
-    for x in numeros:
-        suma_cuadrados = suma_cuadrados + (x - media) ** 2
-    varianza = suma_cuadrados / len(numeros)
+desviacion = math.sqrt(suma_cuadrados / len(numeros))
 
-    desviacion = math.sqrt(varianza)
-
-    print("Números:", numeros)
-    print("Media:", media)
-    print("Desviación típica (poblacional):", desviacion)
+print("\nResultados:")
+print("Media:", media)
+print("Desviación típica:", desviacion)
