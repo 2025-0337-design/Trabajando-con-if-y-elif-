@@ -1,0 +1,43 @@
+"""
+Crea un programa con un menú que muestre:
+1. Saludar
+2. Despedirse
+3. Salir
+Usa un ciclo while para mantener el menú activo hasta que el usuario elija la opción 3. Usa if-elif-else para ejecutar cada opción.
+
+En la opción 1, muestra un saludo de Bienvenida
+En la opción 2, un saludo de despedido
+En la opción 3, muestra el mensaje Bye Bye y cierra el programa
+
+"""
+
+opcion = 0
+
+
+while opcion != 3:
+    print("<---Manu de opciones--->")
+    print("1.Saludar")
+    print("2.Despedirse")
+    print("3.salir ")
+
+    opcion = int(input("Elige una de las 3 opciones"))
+
+    try:
+        opcion = int(opcion)  
+    except ValueError:
+        print("Opción no válida. Debes escribir un número.")
+        continue 
+
+    if opcion == 1:
+        print("Saludos gracias por usar el codigo")
+
+    elif opcion == 2:
+        print("Adios gracias por usar el codigo")
+
+    elif opcion == 3:
+        print("Bye Bye")
+
+    elif opcion > 3:
+        print("la Opcion excede la cantidad de opcines validas")
+        break
+    
